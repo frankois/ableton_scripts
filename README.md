@@ -7,7 +7,7 @@ As a first step, I am sharing the User Remote Scripts that I am using. I added a
 The following devices are included:
 - Komplete Kontrol A61
 - Komplete Kontrol M32
-- Teenage engineering OP1 (developed by https://github.com/marctdt/op-1-ableton-live-control-surface/tree/live-11)
+- Teenage engineering OP1
 
 ```
 .
