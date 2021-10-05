@@ -1,25 +1,12 @@
 # Ableton
 
-The purpose of this repository is to offer Ableton related content. Please not that eveyrhing has only been tested under ABleton Live 11 Suite.
+The purpose of this repository is to offer Ableton related content. Please not that everything has only been tested under Ableton Live 11 Suite.
 
-As a first step, I am sharing the User Remote Scripts that I am using. I added as well the default help files provided by Ableton.
+Basically, I am sharing the scripts that I am using (or that I did use). For each device, you can find either `User Remote Scripts`, `Midi Remote Scripts` or both. If you are interested into Ableton scripting, you can find more information [here](https://medium.com/@ibekso/ableton-scripts-34d615c37aa2). 
 
-The following devices are included:
-- Komplete Kontrol A61
-- Komplete Kontrol M32
-- Teenage engineering OP1
-
-```
-.
-├── README.md
-├── midi_remote_scripts
-└── user_remote_scripts
-    ├── InstantMappings-HowTo.txt
-    ├── UserConfiguration.txt
-    ├── urs_kk_a61
-    │   └── UserConfiguration.txt
-    ├── urs_kk_m32
-    │   └── UserConfiguration.txt
-    └── urs_op1
-        └── UserConfiguration.txt
-```
+The following devices currently included are:
+- Native Instruments
+    - Komplete Kontrol A61
+    - Komplete Kontrol M32
+- Teenage Engineering
+    - Teenage engineering OP1 (developed by https://github.com/marctdt/op-1-ableton-live-control-surface/tree/live-11)
