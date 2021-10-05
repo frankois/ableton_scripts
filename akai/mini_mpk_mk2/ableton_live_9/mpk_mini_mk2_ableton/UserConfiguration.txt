@@ -1,0 +1,170 @@
+# Config File for User-defined Instant Mappings
+
+# We assume that the controls on your MIDI controller
+# send CCs (except for pads). All controls that do not have
+# an explicit channel setting are expected to use the
+# global channel. CCs & Notes are counted from 0-127
+# and channels from 0-15.
+
+[Globals]
+# The channel that the controller should send on
+GlobalChannel: 0
+# If your controller is connected via USB, replace ControllerName
+# with the name of the respective port. Live will then try to 
+# recognize the ports for you when you select your Instant-Mappings
+InputName: MPKmini2
+OutputName: MPKmini2
+# If your controller has pads that send notes, you can use them to
+# play the visible pads in your DrumRacks. Just replace the -1 for
+# the note (and channel) of the respective pad. The arrangement of
+# the pads in the DrumRacks is as follows:
+#   1     2     3     4
+#   5     6     7     8
+#   9    10    11    12  
+#  13    14    15    16
+# (If you leave the channel of a pad at -1, Live will assume that
+#  the pad uses the global channel)
+Pad1Note: 48
+Pad2Note: 49
+Pad3Note: 50
+Pad4Note: 51
+Pad5Note: 44
+Pad6Note: 45
+Pad7Note: 46
+Pad8Note: 47
+Pad9Note: 40
+Pad10Note: 41
+Pad11Note: 42
+Pad12Note: 43
+Pad13Note: 36
+Pad14Note: 37
+Pad15Note: 38
+Pad16Note: 39
+Pad1Channel: -1
+Pad2Channel: -1
+Pad3Channel: -1
+Pad4Channel: -1
+Pad5Channel: -1
+Pad6Channel: -1
+Pad7Channel: -1
+Pad8Channel: -1
+Pad9Channel: -1
+Pad10Channel: -1
+Pad11Channel: -1
+Pad12Channel: -1
+Pad13Channel: -1
+Pad14Channel: -1
+Pad15Channel: -1
+Pad16Channel: -1
+
+[DeviceControls]
+# The Encoders will control the device parameters (you can also
+# use knobs or sliders). Replace the -1's with the CCs sent by 
+# the respective controls on your controller. You can also set
+# the channel for each controller if it differs from the global
+# channel (if you leave the channel of an encoder at -1, Live
+# will assume that the encoder uses the global channel).
+Encoder1: 1
+Encoder2: 2
+Encoder3: 3
+Encoder4: 4
+Encoder5: 5
+Encoder6: 6
+Encoder7: 7
+Encoder8: 8
+EncoderChannel1: -1
+EncoderChannel2: -1
+EncoderChannel3: -1
+EncoderChannel4: -1
+EncoderChannel5: -1
+EncoderChannel6: -1
+EncoderChannel7: -1
+EncoderChannel8: -1
+# Enter the respective map mode for the encoders here. The following
+# map modes are available:
+# - Absolute
+# - Absolute14Bit
+# - LinearSignedBit 
+# - LinearSignedBit2
+# - LinearTwoCompliment
+# - LinearBinaryOffset
+# - AccelSignedBit 
+# - AccelSignedBit2
+# - AccelTwoCompliment
+# - AccelBinaryOffset
+# Consult the controller's documentation to find out which mode to use.
+EncoderMapMode: Absolute
+# Buttons used here are expected to not be toggles (i.e., sending 
+# value 0 every second time you press it).
+Bank1Button: 9
+Bank2Button: 10
+Bank3Button: 11
+Bank4Button: 12
+Bank5Button: 13
+Bank6Button: 14
+Bank7Button: 15
+Bank8Button: 16
+NextBankButton: 23
+PrevBankButton: 24
+LockButton: 22
+
+[MixerControls]
+# Again enter the appropriate CCs for the respective controls.
+# If all sliders use the global channel to send their data,
+# you can leave the channels at -1. You can, of course, use
+# encoders or knobs instead of sliders.
+VolumeSlider1: 25
+VolumeSlider2: 26
+VolumeSlider3: 27
+VolumeSlider4: 28
+VolumeSlider5: 29
+VolumeSlider6: 30
+VolumeSlider7: 31
+VolumeSlider8: 32
+Slider1Channel: -1
+Slider2Channel: -1
+Slider3Channel: -1
+Slider4Channel: -1
+Slider5Channel: -1
+Slider6Channel: -1
+Slider7Channel: -1
+Slider8Channel: -1
+MasterVolumeSlider: -1
+MasterSliderChannel: -1
+Send1Knob1: 41
+Send1Knob2: 42
+Send1Knob3: 43
+Send1Knob4: 44
+Send1Knob5: 45
+Send1Knob6: 46
+Send1Knob7: 47
+Send1Knob8: 48
+Send2Knob1: 49
+Send2Knob2: 50
+Send2Knob3: 51
+Send2Knob4: 52
+Send2Knob5: 53
+Send2Knob6: 54
+Send2Knob7: 55
+Send2Knob8: 56
+TrackArmButton1: 33
+TrackArmButton2: 34
+TrackArmButton3: 35
+TrackArmButton4: 36
+TrackArmButton5: 37
+TrackArmButton6: 38
+TrackArmButton7: 39
+TrackArmButton8: 40
+VolumeMapMode: Absolute
+SendsMapMode: Absolute
+
+[TransportControls]
+# The transport buttons are also expected not to be toggles.
+StopButton: 18
+PlayButton: 17
+RecButton: 19
+LoopButton: 20
+RwdButton: -1
+FfwdButton: -1
+
+
